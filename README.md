@@ -62,9 +62,51 @@ Once the node starts, it will listen for voice commands such as:
 ## 📹 Demo Video
 
 
+
+https://github.com/user-attachments/assets/ad0d9a0a-43a2-4be5-9f80-b6f96ce0da1c
+
+
+
 ## 📡 ROS 2 Topics & Services Used
 
-| Column 1      | Column 2           | Column 3                  |
+| Topic Name   | Message Type      | Description             |
 |--------------|-------------------|--------------------------|
-| Row 1, Col 1 | Row 1, Col 2      | Row 1, Col 3            |
-| Row 2, Col 1 | Row 2, Col 2      | Row 2, Col 3            |
+| `/cmd_vel` | `geometry_msgs/Twist`| Publishes velocity commands to the robot|
+|`/voice_command` | `std_msgs/String`| Publishes recognized voice commands |
+
+
+## 📂 Project Structure
+```
+ros2_bot_description/
+│── launch/                        # Launch files for ROS 2
+│   ├── gazebo.launch.py
+│   ├── state_publisher.launch.py
+│   ├── slave.launch.py
+│── models/
+│   ├── meshes
+│   ├── urdf
+│── scripts/                        # Python scripts for voice recognition
+│   ├── robot_controller.py
+│   ├── voice_command.py
+│── worlds/
+│   ├── new_world.sdf
+│── CMakeLists.txt                  # CMake build configuration
+│── package.xml
+│── README.md
+```
+
+## 📡 RQT Graph Visualization
+Below is an RQT graph of the ROS 2 nodes and topics used in this package:
+
+![Screenshot from 2025-02-09 16-07-54](https://github.com/user-attachments/assets/36fdc976-b912-4bae-b3a4-cb0c9236f477)
+
+This shows how voice commands are processed and sent to the robot.
+
+## 🤝 Contributing
+
+Feel free to fork this repository, create a pull request, or open an issue if you have suggestions or find bugs.
+
+## ✉️ Contact
+
+📧 Yash Bhaskar – ybbhaskar19@gmail.com
+📌 GitHub: https://github.com/yashbhaskar
