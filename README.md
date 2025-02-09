@@ -18,7 +18,7 @@ This ROS 2 package enables **voice-controlled navigation** for a robot using **s
 ### 1️⃣ **Clone the Repository**  
 ```bash
 cd ~/ros_ws/src
-git clone https://github.com/YourGitHubUsername/ros2_bot_description.git
+git clone https://github.com/yashbhaskar/Voice-Controlled-Robot-Navigation-in-ROS2.git
 cd ~/ros_ws
 ```
 
@@ -61,11 +61,7 @@ Once the node starts, it will listen for voice commands such as:
 
 ## 📹 Demo Video
 
-
-
-https://github.com/user-attachments/assets/ad0d9a0a-43a2-4be5-9f80-b6f96ce0da1c
-
-
+https://github.com/user-attachments/assets/ffe5805c-e38b-40e1-bdbb-48c0156fc791
 
 ## 📡 ROS 2 Topics & Services Used
 
